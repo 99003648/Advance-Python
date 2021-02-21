@@ -7,7 +7,7 @@ class Temperature:
 
     def convert_to_celsius(self):
 
-        self.temp_far = (9 / 5 * self.temp_celsius) + 32
+        self.temp_far = (1.8 * self.temp_celsius) + 32
         return round(self.temp_far, 3)
 
     def display(self):
@@ -28,5 +28,5 @@ class Temperature:
         return False
 
 
-C1 = Temperature(45)
+C1 = Temperature(35)
 print(C1.convert_to_celsius())
